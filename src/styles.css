@@ -1,22 +1,30 @@
 /*Estilos generales del proyecto*/
 body {
-    font-family: Arial, sans-serif;
-    background-color:#f4f4f4;
-    margin: 0; 
+    font-family: serif;
+    background-image: url(../dist/imagenes/pexels-carlos-montelara-3450804-5261023.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
     padding: 0;
-    height: 100vh;  
+    height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 
+}
+h1 {
+    text-align: center;
+    color: #8c2296;
 }
 
 /*Estilos para el contenedor parcial */
 #app {
-    background-color: white;
+    background-color: rgb(243, 193, 236);
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -31,18 +39,26 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+    border: 1px solid #a30781;
+    border-radius: 5px;
+    background-color: #f7a0d5;
+    font-family: serif;
+    font-size: 15px;
 }
 
 /*Estilos de boton */
 button {
-    padding: 5 px 8px;
-    background-color: #007bff;
-    color: white;
-    border:none;
+    padding: 8px 12px;
+    background-color: #b63cb0;
+    color: #131212;
+    border:1px solid #a30781;
     border-radius: 3px;
     cursor:pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(228, 179, 221);
 }
 
 /*Estilos de la lista */
@@ -53,18 +69,20 @@ ul {
 
 /*Estilos a los elementos de la lista */
 li {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
+    background-color: #f7a0d5;
+    padding: 12px;
+    border: 1px solid #a30781;
     margin-top: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 
 /*Estilos para cuando una tarea este completa */
 li.completed {
     text-decoration:line-through;
-    color: #888;
+    color: #8c2296;
 }
